@@ -34,9 +34,9 @@
     "url": "git+https://github.com/xcarpentier/rn-pdf-reader-js.git"
   },
   "peerDependencies": {
-    "expo": ">= 33.0.x < 41.0.x",
-    "expo-constants": ">= 5.0.0 < 9.x",
-    "expo-file-system": ">= 5.0.0 < 9.x",
+    "expo": ">= 33.0.x <= 41.0.x",
+    "expo-constants": ">= 5.0.0 < 10.x",
+    "expo-file-system": ">= 5.0.0 < 11.x",
     "react": "16.x",
     "react-native": "*",
     "react-native-webview": ">= 7.0.5 < 12.x"
@@ -52,14 +52,13 @@
     "@types/react-dom": "16.9.4",
     "@types/react-native": "0.60.28",
     "babel-preset-expo": "^8.0.0",
-    "crypto": "1.0.1",
     "expo": "^36.0.2",
     "expo-constants": "~8.0.0",
     "expo-file-system": "~8.0.0",
-    "json": "^9.0.6",
+    "json": "^11.0.0",
     "react": "16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
-    "react-native-webview": "7.4.3",
+    "react-native-webview": "^11.6.4",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "3.7.4"

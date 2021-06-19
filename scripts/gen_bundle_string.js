@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 const path = require('path')
-const crypto = require('crypto')
+const  createHash = require('crypto').createHash;
 
 const encoding = { encoding: 'utf8' }
 const originPath = path.join(__dirname, '../react-pdf/dist/bundle.js')
@@ -12,7 +12,7 @@ const read = (path) => fs.readFileSync(path, encoding)
 const toBase64 = (str) => Buffer.from(str).toString('base64')
 
 const bundleString = read(originPath)
-const md5 = crypto.createHash('md5').update(bundleString).digest('hex')
+const md5 = createHash('md5').update(bundleString).digest('hex')
 
 const bundleContainerFileContent = `
 import { Base64 } from 'js-base64';
